@@ -1,0 +1,50 @@
+.filter-box{
+    border: 1px solid rgb(221, 220, 220);
+    border-radius: 10px;
+    background: var(--blue);
+    overflow: hidden;
+
+    position: sticky;
+    top: 15%;
+}
+.filter{
+    border-top: 1px solid rgb(221, 220, 220);
+    background: #fff;
+    list-style: none;
+    overflow: auto;
+    padding: 0;
+}
+.filter li{
+    margin: 0;
+    padding: 0;
+}
+.filter a{
+    margin: 0;
+    color: gray;
+    display: flex;
+    padding: 1rem;
+}
+.filter a:hover{
+    background-color: #f9f9f9;
+    color: var(--blue);
+}
+.filter a.active{
+    background: var(--blue);
+    color: #fff !important;
+}
+.filter::-webkit-scrollbar{
+    width: 3px;
+    background: transparent;
+}
+.filter::-webkit-scrollbar-thumb{
+    background: var(--blue);
+    box-sizing: 20px;
+}
+/* filter card */
+.filter-card .text-box{
+    height: 100%;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

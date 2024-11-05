@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #0056d2;
+    --lblue: lightblue;
+    --red: red;
+}
+text{
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--blue);
+    box-sizing: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16PX;
+    text-transform: capitalize;
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.red {
+    color: var(--red);
+}
+
+.green {
+    color: green;
+}
+
+.bg-blue {
+    color: #fff !important;
+    background: var(--blue);
+}
+.bg-red{
+    color: #fff !important;
+    background: var(--red);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* flex */
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.,
+.cflex {
+    display: flex;
+}
+
+. {
+    flex-direction: row;
+}
+
+.cflex {
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.flex-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-item-center {
+    margin: auto;
+}
+
+.flex-item-centerx {
+    margin-inline: auto;
+}
+
+.flex-item-centery {
+    margin-block: auto;
+}
+
+.ais {
+    align-items: start;
+}
+
+.aie {
+    align-items: end;
+}
+
+.aic {
+    align-items: center;
+}
+
+.ass {
+    align-self: start;
+}
+
+.ase {
+    align-self: end;
+}
+
+.asc {
+    align-self: center;
+}
+
+.asst {
+    align-self: stretch;
+}
+
+.jcs {
+    justify-content: start;
+}
+
+.jce {
+    justify-content: end;
+}
+
+.jcc {
+    justify-content: center;
+}
+
+. {
+    justify-content: space-between;
+}
+
+.jcsa {
+    justify-content: space-around;
+}
+
+.jcse {
+    justify-content: space-evenly;
+}
+
+.pos-abs {
+    position: absolute;
+}
+
+.pos-fix {
+    position: fixed;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.pos-sti {
+    position: sticky;
+}
+
+.pos-center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pos-centerx {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pos-centery {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.fw_100 {
+    font-weight: 100;
+}
+
+.fw_200 {
+    font-weight: 200;
+}
+
+.fw_300 {
+    font-weight: 300;
+}
+
+.fw_400 {
+    font-weight: 400;
+}
+
+.fw_500 {
+    font-weight: 500;
+}
+
+.fw_600 {
+    font-weight: 600;
+}
+
+.fw_700 {
+    font-weight: 700;
+}
+
+.fw_800 {
+    font-weight: 800;
+}
+
+.fw_900 {
+    font-weight: 900;
+}
+
+p {
+    margin: 0;
+}
+
+@media only screen and (max-width:600px) {
+    * {
+        font-size: small;
+    }
+}@keyframes zoom {
+    to {
+        font-size: 700rem;
+    }
+}
+@keyframes click {
+    0%,
+    100% {
+        transform: unset;
+        box-shadow: 2px 2px 0 0 #00000022;
+    }
+    50% {
+        transform: translate(2px, 2px);
+        box-shadow: 0px 0px 0 0 #00000022;
+    }
+}
+@keyframes blink {
+    0%,
+    40% {
+        opacity: 0.15;
+    }
+    20% {
+        opacity: 1;
+    }
+}
+footer {
+    text-transform: capitalize;
+}
+
+footer .between {
+    flex-wrap: wrap;
+}
+
+
+footer a {
+    display: block;
+    color: #fff;
+}
+
+footer li:hover a {
+    color: red;
+}
+
+footer .tnc a {
+    color: blue;
+}
+
+
+footer .tnc {
+    text-align: center;
+    color: black;
+}
+
+.tnc a {
+    display: inline;
+}
+
+footer article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+footer p {
+    text-align: center;
+    padding: 4px;
+}
+
+@media only screen and (max-width:600px) {
+    footer article {
+        display: block;
+    }
+
+
+    footer p,
+    footer ul {
+        text-align: left;
+        padding: 0;
+    }
+}/* background image */
+.hero {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    position: relative;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.37);
+    z-index: 1;
+}
+
+.hero-content {
+    z-index: 2;
+}
+
+.breadcrumb-item a {
+    color: #fff !important;
+}
+
+/* background img end */
